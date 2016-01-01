@@ -12,4 +12,15 @@ angular.module('voicy', ['ui.router'])
 
 .controller('HomeCtrl', function() {
   var home = this;
+  if (annyang) {
+    var commands = {
+      'say hello': function() {
+        alert("Hello Mahendhar");
+      }
+    };
+
+    annyang.addCommands(commands);
+
+    annyang.start();
+  }
 })
