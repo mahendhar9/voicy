@@ -1,1 +1,7 @@
-<h1>Hello Mahendhar!</h1>
+<h1 class="text-center show-term">{{home.showTerm}}</h1>
+
+<div ng-repeat = "photo in home.showPhotos.hits">
+  <div class="col-sm-3">
+    <a href={{photo.pageURL}} target="_blank"><img ng-src = {{photo.webformatURL}} class="img-display" /></a>
+  </div>
+</div>
