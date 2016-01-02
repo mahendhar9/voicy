@@ -13,7 +13,7 @@ angular.module('voicy', ['ui.router', 'ngResource'])
 .controller('HomeCtrl', function($resource) {
   var home = this;
 
-  home.pixabayApi = $resource("https://pixabay.com/api/?key=1835217-f660445e7f88a77e646ed233", {callback: "JSON_CALLBACK"},{get: {method: "JSONP"}});
+  home.pixabayApi = $resource("https://pixabay.com/api/?key=1835217-f660445e7f88a77e646ed233c", {callback: "JSON_CALLBACK"},{get: {method: "JSONP"}});
 
   if (annyang) {
     var commands = {
